@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "car-detection"
+version = "0.1.1"
+description = ""
+authors = ["LPIXEL Inc."]
+readme = "README.md"
+packages = [{include = "car_detection"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+onnxruntime = "^1.16.1"
+opencv-python = "^4.8.1.78"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.10.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
